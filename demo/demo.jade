@@ -1,0 +1,19 @@
+head
+  title
+    | demo
+
+body
+  h1
+    | Welcome to Meteor!
+
+  with(a="b" c="d")
+    p
+      | This is a p element still in the body but with context data
+    
+    {{> hello}}
+
+template(name="hello")
+  button
+    | Click Me
+  p
+    | You've pressed the button {{counter}} times.
